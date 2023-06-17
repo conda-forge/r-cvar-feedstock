@@ -1,11 +1,11 @@
-About r-cvar
-============
+About r-cvar-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cvar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://geobosh.github.io/cvar/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cvar-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compute expected shortfall (ES) and Value at Risk (VaR) from a quantile function, distribution function, random number generator or probability density function.  ES is also known as Conditional Value at Risk (CVaR). Virtually any continuous distribution can be specified. The functions are vectorized over the arguments. The computations are done directly from the definitions, see e.g. Acerbi and Tasche (2002) <doi:10.1111/1468-0300.00091>. Some support for GARCH models is provided, as well.
 
