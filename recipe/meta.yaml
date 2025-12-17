@@ -1,4 +1,4 @@
-{% set version = '0.5' %}
+{% set version = "0.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cvar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cvar/cvar_{{ version }}.tar.gz
-  sha256: 7e721a68a321acbc74149d6ae9c6e3b0c1f896df9fa7786b8b40264e1db2db18
+  sha256: 9079f57578b0f7e26e788511803e8448ff4f2353c8ff271c5c7b7576198a4330
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,12 +40,8 @@ about:
   home: https://geobosh.github.io/cvar/
   dev_url: https://github.com/GeoBosh/cvar/
   license: GPL-2.0-or-later
-  summary: Compute expected shortfall (ES) and Value at Risk (VaR) from a quantile function,
-    distribution function, random number generator or probability density function.  ES
-    is also known as Conditional Value at Risk (CVaR). Virtually any continuous distribution
-    can be specified. The functions are vectorized over the arguments. The computations
-    are done directly from the definitions, see e.g. Acerbi and Tasche (2002) <doi:10.1111/1468-0300.00091>.
-    Some support for GARCH models is provided, as well.
+  summary: Compute expected shortfall (ES) and Value at Risk (VaR) from a quantile function, distribution function, random number generator or probability density function.  ES is also known as Conditional Value at Risk (CVaR). Virtually any continuous distribution can be specified. The functions are vectorized over the
+    arguments. The computations are done directly from the definitions, see e.g. Acerbi and Tasche (2002) <doi:10.1111/1468-0300.00091>. Some support for GARCH models is provided, as well.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
